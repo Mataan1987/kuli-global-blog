@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mataan1987.github.io/kuli-global-blog/sitemap.xml
