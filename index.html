@@ -28,7 +28,6 @@
       font-family: 'Inter', sans-serif;
       line-height: 1.7;
     }
-    /* NAV */
     nav {
       position: sticky; top: 0; z-index: 100;
       background: rgba(13,13,13,0.95);
@@ -50,8 +49,6 @@
       transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--gold); }
-
-    /* HERO */
     .hero {
       background: linear-gradient(135deg, #0D0D0D 0%, #1a0a00 50%, #0D0D0D 100%);
       border-bottom: 1px solid #222;
@@ -84,8 +81,6 @@
       margin: 0 auto;
       font-size: 1rem;
     }
-
-    /* GRID */
     .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
     .posts-grid {
       display: grid;
@@ -93,8 +88,6 @@
       gap: 2rem;
       padding: 4rem 0;
     }
-
-    /* CARD */
     .card {
       background: var(--card);
       border: 1px solid #2a2a2a;
@@ -103,10 +96,7 @@
       transition: transform 0.2s, border-color 0.2s;
       display: flex; flex-direction: column;
     }
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: var(--gold);
-    }
+    .card:hover { transform: translateY(-4px); border-color: var(--gold); }
     .card-badge {
       background: var(--gold);
       color: #000;
@@ -137,50 +127,14 @@
       transition: gap 0.2s;
     }
     .card-link:hover { gap: 0.7rem; }
-
-    /* DIVIDER */
-    .section-divider {
-      border: none;
-      border-top: 1px solid #222;
-      margin: 0;
-    }
-
-    /* HASHTAG STRIP */
-    .hashtag-strip {
-      background: var(--mid);
-      padding: 1.5rem 2rem;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-    .hashtag-strip span {
-      color: var(--gold);
-      font-size: 0.8rem;
-      margin-right: 1.2rem;
-      opacity: 0.7;
-    }
-
-    /* FOOTER */
-    footer {
-      background: var(--mid);
-      border-top: 1px solid #222;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    footer .footer-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
-      color: var(--gold);
-      display: block;
-      margin-bottom: 0.5rem;
-    }
+    .section-divider { border: none; border-top: 1px solid #222; margin: 0; }
+    .hashtag-strip { background: var(--mid); padding: 1.5rem 2rem; overflow-x: auto; white-space: nowrap; }
+    .hashtag-strip span { color: var(--gold); font-size: 0.8rem; margin-right: 1.2rem; opacity: 0.7; }
+    footer { background: var(--mid); border-top: 1px solid #222; padding: 3rem 2rem; text-align: center; }
+    footer .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--gold); display: block; margin-bottom: 0.5rem; }
     footer p { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.5rem; }
-    footer .socials a {
-      color: var(--muted); text-decoration: none;
-      margin: 0 0.5rem; font-size: 0.85rem;
-      transition: color 0.2s;
-    }
+    footer .socials a { color: var(--muted); text-decoration: none; margin: 0 0.5rem; font-size: 0.85rem; transition: color 0.2s; }
     footer .socials a:hover { color: var(--gold); }
-
     @media (max-width: 600px) {
       nav { padding: 1rem; }
       .nav-links { display: none; }
@@ -190,7 +144,6 @@
   </style>
 </head>
 <body>
-
 <nav>
   <a class="nav-logo" href="/kuli-global-blog/">KULI Global</a>
   <div class="nav-links">
@@ -200,13 +153,11 @@
     <a href="https://twitter.com/kuliglobal" target="_blank">Twitter</a>
   </div>
 </nav>
-
 <section class="hero">
   <div class="hero-tag">Voices from the Horn</div>
   <h1>Opinion & Analysis on Somaliland, Somalia & the Horn of Africa</h1>
   <p>Direct commentary on governance, justice, democracy and the future of our region. By Ismail, KULI Global.</p>
 </section>
-
 <div class="hashtag-strip">
   <span>#Somaliland</span>
   <span>#Somalia</span>
@@ -219,12 +170,28 @@
   <span>#RuleOfLaw</span>
   <span>#EastAfrica</span>
 </div>
-
 <hr class="section-divider" />
-
 <div class="container">
   <div id="posts" class="posts-grid">
-
+    <article class="card" style="border-color: var(--gold); position:relative;">
+      <div style="position:absolute;top:0;right:0;background:var(--gold);color:#000;font-size:0.6rem;font-weight:700;letter-spacing:1px;padding:0.25rem 0.6rem;border-radius:0 8px 0 6px;">SOOMAALI</div>
+      <span class="card-badge">Caddaalad &amp; Garsoor</span>
+      <div class="card-body">
+        <div class="card-meta">June 12, 2026 &nbsp;·&nbsp; Ismail, KULI Global</div>
+        <h2>Qareennada iyo Caddaaladda Somaliland</h2>
+        <p>Nuqul Af-Soomaali ah oo si toos ah uga hadlaya qareennada, garsoorka, laaluushka iyo baahida baadhis madax-bannaan.</p>
+        <a class="card-link" href="posts/qareennada-cadaalada-somaliland-af-soomaali.html">Akhri Af-Soomaali →</a>
+      </div>
+    </article>
+    <article class="card">
+      <span class="card-badge">Justice &amp; Governance</span>
+      <div class="card-body">
+        <div class="card-meta">June 12, 2026 &nbsp;·&nbsp; Ismail, KULI Global</div>
+        <h2>When Lawyering Becomes Brokerage, Justice Dies</h2>
+        <p>English version of the lawyers issue article: legal ethics, judicial influence, bribery allegations, and the need for independent investigation.</p>
+        <a class="card-link" href="posts/lawyers-and-justice-in-somaliland-english.html">Read English version →</a>
+      </div>
+    </article>
     <article class="card" style="border-color: var(--gold); position:relative;">
       <div style="position:absolute;top:0;right:0;background:var(--gold);color:#000;font-size:0.6rem;font-weight:700;letter-spacing:1px;padding:0.25rem 0.6rem;border-radius:0 8px 0 6px;">NEW</div>
       <span class="card-badge">Caddaalad &amp; Garsoor</span>
@@ -232,10 +199,9 @@
         <div class="card-meta">June 12, 2026 &nbsp;·&nbsp; Ismail, KULI Global</div>
         <h2>Marka Qareennimada Laga Dhigo Dallaalnimo, Caddaaladdu Way Dhimataa</h2>
         <p>Qoraal Af-Soomaali ah oo ka hadlaya khatarta marka qareennimada iyo garsoorku noqdaan marinno saamayn, lacag iyo ganacsi qarsoon.</p>
-        <a class="card-link" href="posts/qareennada-iyo-cadaalada-somaliland.html">Read article →</a>
+        <a class="card-link" href="posts/qareennada-iyo-cadaalada-somaliland.html">Read original post →</a>
       </div>
     </article>
-
     <article class="card" style="border-color: var(--gold); position:relative;">
       <div style="position:absolute;top:0;right:0;background:var(--gold);color:#000;font-size:0.6rem;font-weight:700;letter-spacing:1px;padding:0.25rem 0.6rem;border-radius:0 8px 0 6px;">🇸🇴 🇬🇧 BILINGUAL</div>
       <span class="card-badge">Justice &amp; Governance</span>
@@ -246,7 +212,6 @@
         <a class="card-link" href="posts/caddaalad-justice-bilingual.html">Read bilingual article →</a>
       </div>
     </article>
-
     <article class="card">
       <span class="card-badge">Justice &amp; Governance</span>
       <div class="card-body">
@@ -256,7 +221,6 @@
         <a class="card-link" href="posts/justice-cannot-be-a-business.html">Read article →</a>
       </div>
     </article>
-
     <article class="card">
       <span class="card-badge">Geopolitics</span>
       <div class="card-body">
@@ -266,12 +230,9 @@
         <a class="card-link" href="posts/somaliland-recognition.html">Read article →</a>
       </div>
     </article>
-
   </div>
 </div>
-
 <hr class="section-divider" />
-
 <footer>
   <span class="footer-logo">KULI Global</span>
   <p>Building the Horn of Africa's future — one idea at a time.</p>
@@ -282,6 +243,5 @@
     <a href="https://kuli.global">kuli.global</a>
   </div>
 </footer>
-
 </body>
 </html>
